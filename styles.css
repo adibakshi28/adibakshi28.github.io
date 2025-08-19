@@ -167,6 +167,11 @@ body {
 .timeline .time { color: var(--muted); font-size: 0.95rem; }
 .timeline .role { font-weight: 700; margin: 0.15rem 0 0.25rem; }
 
+/* Education: small logos + tidy layout */
+.edu-row { display: grid; grid-template-columns: 40px 1fr; gap: 0.75rem; align-items: start; }
+.edu-logo { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); object-fit: contain; padding: 4px; }
+.edu-item .role { margin-top: 0.1rem; }
+
 /* Skills */
 .skills { display:grid; grid-template-columns: repeat(3,1fr); gap: 1rem; }
 .skill-col { background: var(--surface); border:1px solid var(--border); border-radius: 14px; padding: 1rem; }
