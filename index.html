@@ -98,20 +98,26 @@
       <h3 class="section-title">Featured Projects</h3>
       <div class="grid cards">
         <article class="card reveal">
-            <div class="card-cover" role="img" aria-label="Mock trading dashboard" style="padding:0;background:transparent;">
-                <img src="/assets/mock-trading-dashboard.png" alt="Screenshot of Mock Trading Dashboard" style="width:100%;height:auto;object-fit:cover;border-radius:inherit;box-shadow:0 4px 16px rgba(0,0,0,0.10);" />
+            <div class="card-cover">
+                <img
+                src="assets/mock-trading-dashboard.png"
+                alt="Mock trading dashboard UI"
+                loading="lazy"
+                width="1200" height="630"
+                />
             </div>
             <div class="card-body">
                 <h4>Real-time Mock Trading & Analytics Engine</h4>
                 <p>FastAPI + PostgreSQL + AWS platform for mock trading, risk analytics, and portfolio optimization. Live market data via WebSockets with sub-500ms updates.</p>
                 <div class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>AWS</span><span>WebSockets</span></div>
-                <div class="card-actions" style="display:flex;gap:0.5em;flex-wrap:wrap;margin-top:1em;"></div>
-                    <a class="btn small btn-primary" href="https://trade-trek.netlify.app/" target="_blank" rel="noopener" style="background:#2563eb;color:#fff;border:none;box-shadow:0 2px 8px rgba(37,99,235,0.10);padding:0.6em 1.2em;font-weight:600;transition:background 0.2s,transform 0.2s;cursor:pointer;border-radius:6px;text-decoration:none;">Live Demo</a>
-                    <a class="btn small btn-ghost" href="https://github.com/adibakshi28/Trade-Trek-API" target="_blank" rel="noopener" style="background:#fff;color:#2563eb;border:1.5px solid #2563eb;box-shadow:0 2px 8px rgba(37,99,235,0.06);padding:0.6em 1.2em;font-weight:600;transition:background 0.2s,transform 0.2s;cursor:pointer;border-radius:6px;text-decoration:none;">Backend</a>
-                    <a class="btn small btn-ghost" href="https://github.com/adibakshi28/Trade-Trek-FE" target="_blank" rel="noopener" style="background:#fff;color:#2563eb;border:1.5px solid #2563eb;box-shadow:0 2px 8px rgba(37,99,235,0.06);padding:0.6em 1.2em;font-weight:600;transition:background 0.2s,transform 0.2s;cursor:pointer;border-radius:6px;text-decoration:none;">Frontend</a>
+                <div class="card-actions">
+                <a class="btn small btn-primary" href="https://trade-trek.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn small btn-ghost" href="https://github.com/adibakshi28/Trade-Trek-API" target="_blank" rel="noopener">Backend</a>
+                <a class="btn small btn-ghost" href="https://github.com/adibakshi28/Trade-Trek-FE" target="_blank" rel="noopener">Frontend</a>
                 </div>
             </div>
         </article>
+
 
         <article class="card reveal">
           <div class="card-cover cover-lob" role="img" aria-label="Order book data warehouse"></div>
