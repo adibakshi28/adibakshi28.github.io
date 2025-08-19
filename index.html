@@ -221,36 +221,132 @@
       <div id="live-feed" class="grid cards"></div>
     </section>
 
-    <section id="experience" class="container">
-      <h3 class="section-title">Experience</h3>
-      <ol class="timeline">
-        <li class="reveal">
-          <div class="time">Jul 2025 – Present</div>
-          <div class="role">Investment Quantitative Developer · MassMutual · New York</div>
-          <p>Designed statistical models & data pipelines supporting a $285B investment account across FI ETFs, structured credit, and derivatives. Built front-office tools and integrated Python, Docker, and GitHub workflows.</p>
-        </li>
-        <li class="reveal">
-          <div class="time">Jun 2024 – May 2025</div>
-          <div class="role">Research Analyst · Endless Frontier Labs · New York</div>
-          <p>Built scalable Python/SQL data pipelines and the organization website with interactive analytics.</p>
-        </li>
-        <li class="reveal">
-          <div class="time">Jan 2023 – Aug 2023</div>
-          <div class="role">Quantitative Researcher · Estee Advisors · Gurugram</div>
-          <p>Created long-only multi-factor models for Asian equities; applied ML to macro/technical/alt data; achieved &gt;1% monthly alpha with high Sharpe and low volatility.</p>
-        </li>
-        <li class="reveal">
-          <div class="time">Jul 2021 – Jan 2023</div>
-          <div class="role">Senior Software Engineer — Trading Middleware · Estee Advisors</div>
-          <p>Real-time risk engine with sub-millisecond recalibration; event-driven strategy builder and execution engine; HFT middleware with 5.9μs latency; led cross-functional API/WebSocket integration.</p>
-        </li>
-        <li class="reveal">
-          <div class="time">Aug 2020 – Jul 2021</div>
-          <div class="role">Software Engineer — Investment Platform · Estee Advisors</div>
-          <p>Engineered a scalable advisory platform “Gulaq” on FastAPI/AWS/MySQL serving 100K+ users via microservices, SQS, and serverless compute.</p>
-        </li>
-      </ol>
-    </section>
+<section id="experience" class="container">
+  <h3 class="section-title">Experience</h3>
+
+  <ol class="timeline exp-timeline">
+    <!-- MassMutual (one company, one image, many roles if needed) -->
+    <li class="reveal exp-item">
+      <div class="exp-node">
+        <img src="assets/massmutual.png" alt="MassMutual logo" class="exp-logo" />
+      </div>
+
+      <div class="exp-content">
+        <div class="exp-top">
+          <h4 class="exp-company">MassMutual</h4>
+          <span class="pill exp-years">2025–Present</span>
+        </div>
+        <div class="exp-meta">
+          <span class="exp-loc">New York, USA</span>
+        </div>
+
+        <ul class="exp-roles">
+          <li>
+            <div class="role-line">
+              <span class="role-title">Investment Quantitative Developer</span>
+              <span class="pill role-years">2025–Present</span>
+            </div>
+            <p>Designed statistical models &amp; data pipelines supporting a $285B investment account across FI ETFs, structured credit, and derivatives. Built front-office tools and integrated Python, Docker, and GitHub workflows.</p>
+          </li>
+        </ul>
+
+        <!-- One optional image per company -->
+        <!--
+        <figure class="exp-cover">
+          <img src="assets/exp-massmutual.png" alt="Front-office risk and analytics tools at MassMutual" loading="lazy">
+          <figcaption class="small">Front-office risk &amp; analytics tooling</figcaption>
+        </figure>
+        -->
+      </div>
+    </li>
+
+    <!-- Endless Frontier Labs -->
+    <li class="reveal exp-item">
+      <div class="exp-node">
+        <img src="assets/efl.png" alt="Endless Frontier Labs logo" class="exp-logo" />
+      </div>
+
+      <div class="exp-content">
+        <div class="exp-top">
+          <h4 class="exp-company">Endless Frontier Labs</h4>
+          <span class="pill exp-years">2024–2025</span>
+        </div>
+        <div class="exp-meta">
+          <span class="exp-loc">New York, USA</span>
+        </div>
+
+        <ul class="exp-roles">
+          <li>
+            <div class="role-line">
+              <span class="role-title">Research Analyst</span>
+              <span class="pill role-years">2024–2025</span>
+            </div>
+            <p>Built scalable Python/SQL data pipelines and the organization website with interactive analytics.</p>
+          </li>
+        </ul>
+
+        <!--
+        <figure class="exp-cover">
+          <img src="assets/exp-efl.png" alt="Interactive analytics website at EFL" loading="lazy">
+          <figcaption class="small">Interactive analytics website</figcaption>
+        </figure>
+        -->
+      </div>
+    </li>
+
+    <!-- Estee Advisors (3 roles grouped under one company, one image) -->
+    <li class="reveal exp-item">
+      <div class="exp-node">
+        <img src="assets/estee.png" alt="Estee Advisors logo" class="exp-logo" />
+      </div>
+
+      <div class="exp-content">
+        <div class="exp-top">
+          <h4 class="exp-company">Estee Advisors</h4>
+          <span class="pill exp-years">2020–2023</span>
+        </div>
+        <div class="exp-meta">
+          <span class="exp-loc">Gurugram, India</span>
+        </div>
+
+        <ul class="exp-roles">
+          <li>
+            <div class="role-line">
+              <span class="role-title">Software Engineer — Investment Platform</span>
+              <span class="pill role-years">2020–2021</span>
+            </div>
+            <p>Engineered a scalable advisory platform “Gulaq” on FastAPI/AWS/MySQL serving 100K+ users via microservices, SQS, and serverless compute.</p>
+          </li>
+
+          <li>
+            <div class="role-line">
+              <span class="role-title">Senior Software Engineer — Trading Middleware</span>
+              <span class="pill role-years">2021–2023</span>
+            </div>
+            <p>Real-time risk engine with sub-millisecond recalibration; event-driven strategy builder &amp; execution engine; HFT middleware with 5.9μs latency; led API/WebSocket integrations.</p>
+          </li>
+
+          <li>
+            <div class="role-line">
+              <span class="role-title">Quantitative Researcher</span>
+              <span class="pill role-years">2023</span>
+            </div>
+            <p>Built long-only multi-factor models for Asian equities; applied ML to macro/technical/alt data; achieved &gt;1% monthly alpha with high Sharpe and low volatility.</p>
+          </li>
+        </ul>
+
+        <!-- One image for the company, not per role -->
+        <!--
+        <figure class="exp-cover">
+          <img src="assets/exp-estee.png" alt="Trading middleware and research dashboards at Estee Advisors" loading="lazy">
+          <figcaption class="small">Trading middleware &amp; quant research dashboards</figcaption>
+        </figure>
+        -->
+      </div>
+    </li>
+  </ol>
+</section>
+
 
     <section id="education" class="container">
         <h3 class="section-title">Education</h3>
