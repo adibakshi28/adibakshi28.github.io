@@ -3,127 +3,259 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aditya Bakshi — Portfolio</title>
-  <meta name="description" content="Engineer · Quant · Trader · Data Scientist — New York" />
+  <title>Aditya Bakshi — Engineer · Quant · Trader</title>
+  <meta name="description" content="Engineer · Quant · Trader · Data Scientist — New York. Real-time trading systems, order-book infra, and finance NLP tools." />
+  <link rel="canonical" href="https://adibakshi28.github.io/" />
   <meta property="og:title" content="Aditya Bakshi — Portfolio" />
-  <meta property="og:description" content="Engineer · Quant · Trader · Data Scientist — New York" />
+  <meta property="og:description" content="Real-time trading systems, order-book infra, and finance NLP tools." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/avatar.png" />
+  <meta name="theme-color" content="#0b0d10" />
   <link rel="icon" href="/assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aditya Bakshi",
+    "jobTitle": "Investment Quantitative Developer",
+    "email": "mailto:adibakshi28@gmail.com",
+    "url": "https://adibakshi28.github.io",
+    "sameAs": [
+      "https://github.com/adibakshi28",
+      "https://www.linkedin.com/in/adibakshi28"
+    ],
+    "address": {"@type":"PostalAddress", "addressLocality":"New York", "addressRegion":"NY", "addressCountry":"US"}
+  }
+  </script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
       <div class="brand">
-        <img src="/assets/avatar.png" alt="Avatar" class="avatar" />
-        <div>
-          <h1>Aditya Bakshi</h1>
+        <div class="avatar-wrap">
+          <img src="/assets/avatar.png" alt="Portrait of Aditya Bakshi" class="avatar" />
+        </div>
+        <div class="brand-meta">
+          <h1 class="gradient">Aditya Bakshi</h1>
           <p>Engineer · Quant · Trader · Data Scientist — New York</p>
         </div>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-        <a class="btn" href="https://github.com/adibakshi28" target="_blank" rel="noopener">GitHub</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn small">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero container">
-      <h2>Building real-time trading systems, order-book infra, and finance NLP tools.</h2>
-      <p class="muted">I like fast paths, clean APIs, and measurable results.</p>
-      <div class="cta">
-        <a class="btn" href="#projects">See my work</a>
-        <a class="btn btn-ghost" href="mailto:aditya@yourdomain.com">Hire me</a>
+      <div class="hero-text">
+        <h2>Building <span class="underline">real-time trading systems</span>, <span class="underline">order-book infra</span>, and <span class="underline">finance NLP</span>.</h2>
+        <p class="muted">I care about fast paths, clean APIs, and measurable results.</p>
+        <div class="cta">
+          <a class="btn" href="mailto:adibakshi28@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <a class="btn btn-ghost" href="https://github.com/adibakshi28" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/adibakshi28" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+        <div class="grid-bg"></div>
+      </div>
+    </section>
+
+    <section class="metrics container" aria-label="Highlights">
+      <div class="metric">
+        <div class="metric-num">$285B</div>
+        <div class="metric-label">investment account supported</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">5.9μs</div>
+        <div class="metric-label">execution latency achieved</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">100K+</div>
+        <div class="metric-label">retail users served</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">40% ROI</div>
+        <div class="metric-label">crypto strategy backtest</div>
       </div>
     </section>
 
     <section id="projects" class="container">
       <h3 class="section-title">Featured Projects</h3>
-      <div class="grid">
-        <!-- Hand-picked highlights: edit as you like -->
-        <article class="card">
-          <h4>Trade-Trek API</h4>
-          <p>FastAPI backend for a real-time trading engine: accounts, orders, market data, risk.</p>
-          <div class="tags"><span>Python</span><span>FastAPI</span><span>Postgres</span></div>
-          <a class="card-link" href="https://github.com/adibakshi28/Trade-Trek-API" target="_blank" rel="noopener">Repo →</a>
+      <div class="grid cards">
+        <article class="card reveal">
+          <div class="card-cover" role="img" aria-label="Mock trading dashboard"></div>
+          <div class="card-body">
+            <h4>Real-time Mock Trading & Analytics Engine</h4>
+            <p>FastAPI + PostgreSQL + AWS platform for mock trading, risk analytics, and portfolio optimization. Live market data via WebSockets with sub-500ms updates.</p>
+            <div class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>AWS</span><span>WebSockets</span></div>
+            <div class="card-actions">
+              <a class="btn small" href="https://trade-trek.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
+              <a class="btn small btn-ghost" href="https://github.com/adibakshi28/Trade-Trek-API" target="_blank" rel="noopener">Backend</a>
+              <a class="btn small btn-ghost" href="https://github.com/adibakshi28/Trade-Trek-FE" target="_blank" rel="noopener">Frontend</a>
+            </div>
+          </div>
         </article>
 
-        <article class="card">
-          <h4>Trade-Trek FE</h4>
-          <p>React UI for live trading: order entry, blotter, positions, P&amp;L.</p>
-          <div class="tags"><span>React</span><span>Vite</span></div>
-          <a class="card-link" href="https://github.com/adibakshi28/Trade-Trek-FE" target="_blank" rel="noopener">Repo →</a>
+        <article class="card reveal">
+          <div class="card-cover cover-lob" role="img" aria-label="Order book data warehouse"></div>
+          <div class="card-body">
+            <h4>Large-Scale Time-Series Order-Book Warehouse</h4>
+            <p>High-performance C++17 warehouse with fixed-size binary snapshots, multithreaded query engine, and fast random access.</p>
+            <div class="tags"><span>C++17</span><span>Time-Series</span><span>Concurrency</span></div>
+            <a class="btn small" href="https://github.com/adibakshi28/Large-Scale-Time-Series-Order-Book-Data-Warehouse" target="_blank" rel="noopener">Repo</a>
+          </div>
         </article>
 
-        <article class="card">
-          <h4>LOB Data Warehouse</h4>
-          <p>High-throughput, large-scale time-series order-book ingest/storage in C++.</p>
-          <div class="tags"><span>C++</span><span>Time-Series</span></div>
-          <a class="card-link" href="https://github.com/adibakshi28/Large-Scale-Time-Series-Order-Book-Data-Warehouse" target="_blank" rel="noopener">Repo →</a>
+        <article class="card reveal">
+          <div class="card-cover cover-lora" role="img" aria-label="LoRA finance NLP"></div>
+          <div class="card-body">
+            <h4>LoRA Enhanced LLM Fine-Tuning for Finance NLP</h4>
+            <p>Fine-tuning pipelines with quantization-aware training and adaptive LR for sentiment and market analysis tasks.</p>
+            <div class="tags"><span>TensorFlow</span><span>LoRA</span><span>NLP</span></div>
+            <a class="btn small" href="https://github.com/adibakshi28/DL-LoRA_Fine_Tune_LLM-Tensorflow" target="_blank" rel="noopener">Repo</a>
+          </div>
         </article>
 
-        <article class="card">
-          <h4>Technical Strategy Analyzer</h4>
-          <p>Interactive Dash app for backtesting technical strategies with tunable params.</p>
-          <div class="tags"><span>Python</span><span>Dash</span></div>
-          <a class="card-link" href="https://github.com/adibakshi28/Technical_Strategy_Analyzer-Dash_py" target="_blank" rel="noopener">Repo →</a>
+        <article class="card reveal">
+          <div class="card-cover cover-dao" role="img" aria-label="DAO governance"></div>
+          <div class="card-body">
+            <h4>DAO Governance Framework + ADI Token</h4>
+            <p>Ethereum smart contracts for proposals, voting, and execution. ERC-20 token for secure and democratic voting.</p>
+            <div class="tags"><span>Solidity</span><span>Hardhat</span></div>
+            <a class="btn small" href="https://github.com/adibakshi28/Decentralized_Governance_Framework-Ethereum_Blockchain" target="_blank" rel="noopener">Repo</a>
+          </div>
         </article>
 
-        <article class="card">
-          <h4>Finance NLP LoRA (TensorFlow)</h4>
-          <p>Efficient fine-tuning for finance text tasks (earnings, sentiment, QA).</p>
-          <div class="tags"><span>TensorFlow</span><span>LoRA</span></div>
-          <a class="card-link" href="https://github.com/adibakshi28/DL-LoRA_Fine_Tune_LLM-Tensorflow" target="_blank" rel="noopener">Repo →</a>
+        <article class="card reveal">
+          <div class="card-cover cover-dash" role="img" aria-label="Technical strategy analyzer"></div>
+          <div class="card-body">
+            <h4>Technical Strategy Analyzer</h4>
+            <p>Interactive Dash app for backtesting technical strategies with tunable parameters and result comparison.</p>
+            <div class="tags"><span>Python</span><span>Dash</span></div>
+            <a class="btn small" href="https://github.com/adibakshi28/Technical_Strategy_Analyzer-Dash_py" target="_blank" rel="noopener">Repo</a>
+          </div>
         </article>
 
-        <article class="card">
-          <h4>DAO Governance + ADI Token</h4>
-          <p>ERC-20 token with proposals/voting and treasury-safe governance.</p>
-          <div class="tags"><span>Solidity</span><span>Hardhat</span></div>
-          <a class="card-link" href="https://github.com/adibakshi28/Decentralized_Governance_Framework-Ethereum_Blockchain" target="_blank" rel="noopener">Repo →</a>
+        <article class="card reveal">
+          <div class="card-cover cover-crypto" role="img" aria-label="Crypto momentum trader"></div>
+          <div class="card-body">
+            <h4>Cryptocurrency Momentum Algorithmic Trader</h4>
+            <p>Momentum-based BTC strategy with robust backtesting and bootstrapping analysis.</p>
+            <div class="tags"><span>Python</span><span>Backtesting</span></div>
+            <a class="btn small" href="https://github.com/adibakshi28/AlgoRhythmic_BTC_Momentum_Trader" target="_blank" rel="noopener">Repo</a>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="container">
       <h3 class="section-title">Latest on GitHub</h3>
-      <p class="muted">A few recent repositories & updates pulled live.</p>
-      <div id="live-feed" class="grid"></div>
+      <p class="muted">Recent repositories & updates (pulled live).</p>
+      <div id="live-feed" class="grid cards"></div>
     </section>
 
     <section id="experience" class="container">
-      <h3 class="section-title">Experience & Skills</h3>
-      <ul class="bullets">
-        <li>Trading systems (real-time order entry, risk, market data)</li>
-        <li>Data infra (LOB ingest, time-series storage, backtesting)</li>
-        <li>ML/NLP for finance (LoRA, TF, classical quant)</li>
-      </ul>
-      <div class="tags big">
-        <span>C++</span><span>Python</span><span>FastAPI</span><span>React</span>
-        <span>TensorFlow</span><span>Pandas</span><span>Dash</span>
-        <span>Solidity</span><span>Hardhat</span><span>VBA</span><span>Unity</span>
+      <h3 class="section-title">Experience</h3>
+      <ol class="timeline">
+        <li class="reveal">
+          <div class="time">Jul 2025 – Present</div>
+          <div class="role">Investment Quantitative Developer · MassMutual · New York</div>
+          <p>Designed statistical models & data pipelines supporting a $285B investment account across FI ETFs, structured credit, and derivatives. Built front-office tools and integrated Python, Docker, and GitHub workflows.</p>
+        </li>
+        <li class="reveal">
+          <div class="time">Jun 2024 – May 2025</div>
+          <div class="role">Research Analyst · Endless Frontier Labs · New York</div>
+          <p>Built scalable Python/SQL data pipelines and the organization website with interactive analytics.</p>
+        </li>
+        <li class="reveal">
+          <div class="time">Jan 2023 – Aug 2023</div>
+          <div class="role">Quantitative Researcher · Estee Advisors · Gurugram</div>
+          <p>Created long-only multi-factor models for Asian equities; applied ML to macro/technical/alt data; achieved &gt;1% monthly alpha with high Sharpe and low volatility.</p>
+        </li>
+        <li class="reveal">
+          <div class="time">Jul 2021 – Jan 2023</div>
+          <div class="role">Senior Software Engineer — Trading Middleware · Estee Advisors</div>
+          <p>Real-time risk engine with sub-millisecond recalibration; event-driven strategy builder and execution engine; HFT middleware with 5.9μs latency; led cross-functional API/WebSocket integration.</p>
+        </li>
+        <li class="reveal">
+          <div class="time">Aug 2020 – Jul 2021</div>
+          <div class="role">Software Engineer — Investment Platform · Estee Advisors</div>
+          <p>Engineered a scalable advisory platform “Gulaq” on FastAPI/AWS/MySQL serving 100K+ users via microservices, SQS, and serverless compute.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills" class="container">
+      <h3 class="section-title">Skills & Tools</h3>
+      <div class="skills">
+        <div class="skill-col">
+          <h4>Core</h4>
+          <div class="tags big">
+            <span>Python</span><span>C++</span><span>JavaScript</span><span>FastAPI</span><span>Node.js</span><span>React</span>
+          </div>
+        </div>
+        <div class="skill-col">
+          <h4>Systems</h4>
+          <div class="tags big">
+            <span>AWS</span><span>Docker</span><span>Redis</span><span>RabbitMQ</span><span>Kafka</span><span>SQL</span><span>Linux</span>
+          </div>
+        </div>
+        <div class="skill-col">
+          <h4>Specialties</h4>
+          <div class="tags big">
+            <span>ML (TensorFlow)</span><span>Transformers</span><span>LLMs</span><span>Blockchain</span><span>Distributed Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h3 class="section-title">Certifications</h3>
+      <div class="grid cards">
+        <article class="card small reveal">
+          <h4>GARP FRM® Level 1</h4>
+          <p>Earned elite distinction (top 5% globally).</p>
+        </article>
+        <article class="card small reveal">
+          <h4>NISM Series-XVI: Commodity Derivatives</h4>
+          <p>Score: 92.7%.</p>
+        </article>
+        <article class="card small reveal">
+          <h4>Bloomberg Market Concepts</h4>
+          <p>Certification.</p>
+        </article>
       </div>
     </section>
 
     <section id="contact" class="container">
       <h3 class="section-title">Contact</h3>
       <div class="contact">
-        <a class="btn" href="mailto:aditya@yourdomain.com">Email</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/adibakshi28" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="mailto:adibakshi28@gmail.com">Email</a>
+        <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
         <a class="btn btn-ghost" href="https://github.com/adibakshi28" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/adibakshi28" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container small">
-      © <span id="year"></span> Aditya Bakshi. Built with HTML/CSS/JS, deployed on GitHub Pages.
+      © <span id="year"></span> Aditya Bakshi · Built with HTML/CSS/JS · Hosted on GitHub Pages.
     </div>
   </footer>
 
